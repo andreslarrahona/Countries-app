@@ -46,7 +46,3 @@ This project showcases:
 - Proficiency in **Vue.js** and its ecosystem
 - Strong **CSS skills**, combining Bootstrap with custom classes to achieve a unique design.
 - A **desktop-first approach** to responsive design, ensuring compatibility across all devices.
-
-# Running webpage
-
-[https://andreslarrahona.github.io/Countries-app/](https://andreslarrahona.github.io/Countries-app/)
