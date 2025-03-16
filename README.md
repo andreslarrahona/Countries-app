@@ -31,10 +31,12 @@ A web application developed in Vue.js that allows users to explore detailed info
 # Screenshots
 
 Country List
-Initial view with the list of countries.
+![Country List](./public/screenshots/main.png)
 
 Country Details
 Details view of a selected country.
+![Country Details](./public/screenshots/selected.png)
+
 
 # Why This Project?
 
