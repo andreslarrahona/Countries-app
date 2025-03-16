@@ -1,0 +1,193 @@
+*, *::after, *::before{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  
+
+}
+:root{
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue: hsl(207, 26%, 17%);
+  --very-dark-blue-light: hsl(200, 15%, 8%);
+  --dark-gray-light: hsl(0, 0%, 52%);
+  --light-gray: hsl(0, 0%, 84%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white-dark: hsl(0, 0%, 100%);
+}
+
+body{background-color:var(--very-dark-blue)}
+nav{border-bottom:solid var(--dark-blue) 2px; }
+.header{height:10vh;overflow:hidden;}
+.main{height:87vh;}
+.footer{height:3vh;overflow:hidden;}
+.bg-dark {background-color: var(--dark-blue) !important;}
+.border-dark{border:solid var(--dark-blue) 1px}
+.text-light{color: var(--white-dark) !important;}
+.--border-none{border:none !important;}
+.--shadow-dn{box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)}
+.--bg-very-dark{background-color:var(--very-dark-blue)}
+.--sm{font-size:0.9em;}
+.--tiny{font-size:0.8em;}
+.--h-85{height:85%;}
+.--h-80{height:80%;}
+.--h-40{height:40%;}
+.--h-20{height:20%;}
+.--h-15{height:15%;}
+.--h-10{height:10%;}
+.--w-80{width:80%;}
+.--min-width-100{min-width:100%;}
+.--max-width-100{max-width:100%;}
+.--max-height-55{max-height:55%;}
+.--col-19{width:19%;}
+.--m-0{margin:0;}
+.--p-0{padding:0}
+.--px-10{padding-left:10%;padding-right:10%;}
+
+#app{background-color:var(--very-light-gray);}
+
+.input-country{background-color:inherit !important;}
+.input-country::placeholder{color:var(--light-gray);}
+.input-country:focus{outline:none !important;}
+.input-country-div{width:50%;transition:all 0.5s;border-radius:5px;overflow-x:hidden;}
+.input-country-div:hover{background-color:var(--very-dark-blue-light) !important}
+
+.card h5{font-size:1.4em;}
+.card-text{color:var(--light-gray) !important;}
+
+.flag-card{
+  font-size:10px;
+  padding:0;
+  margin:0;
+  min-width:200px;
+  max-width:250px;
+  max-height:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  transition:all 0.2s;
+  cursor:pointer;
+}
+.flag-card img{
+  max-height: 120px;
+  min-height:120px;
+  object-fit:cover
+}
+.flag-card:hover{
+  scale:1.03;
+  box-shadow: 0 4px 8px 0 rgba(147, 147, 147, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cards{
+  display:flex;
+  max-height:85%;
+  overflow:auto;
+  scrollbar-width:thin;
+  scrollbar-color: var(--dark-blue) hsl(0, 0%, 0%);
+  
+}
+.region-select{
+  padding:0.5em 1.5em;
+  width:200px;
+  transition:all 0.5s;
+}
+.region-select:hover{
+  background-color:var(--very-dark-blue-light) !important
+}
+
+.div-filters{
+  padding-bottom:2em;
+  padding-top:2em;
+}
+
+.loading{
+  position:absolute;
+  top:30vh;
+  left:50vw;
+  z-index:10;
+}
+
+.borders{
+  font-size:0.8em;
+  margin-top:1.4em;
+  max-width:40vw;
+
+}
+.tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1em;
+  margin-left:1em;
+}
+.tab, .btn-back{
+  padding:0.5em 1em;
+  /* margin:auto 0.5em; */
+  border-radius:5px;
+  color:var(--light-gray)
+
+}
+
+.border-title{
+  text-wrap:nowrap;
+  align-content:flex-start;
+  color:var(--light-gray) !important;
+}
+
+.btn-back{border:none;transition:all 0.2s}
+.btn-back:hover{
+  scale:1.05;
+  box-shadow: 0 4px 8px 0 rgba(147, 147, 147, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+footer{
+  color:var(--light-gray);
+  padding:0.2em 2em;
+}
+#light-mode{
+  transition:all 0.4s;
+  cursor:not-allowed;
+}
+#light-mode:hover{
+  color:#b0aeae !important;
+}
+
+@media screen and (max-width:770px){
+  .div-filters div, #cont-buscador input{
+    margin-top:1.5em;
+    min-width:200px;
+  }
+  .div-filters{
+    margin-bottom:5em !important;
+    padding-top:3em !important;
+  }
+  #light-mode{font-size:0.9em;}
+  .cards{max-height:70% !important;}
+  footer{
+    padding:0.5em 2em;
+  }
+  
+}
+
+@media screen and (max-width:345px){
+  nav a span{
+    display:none;
+  }
+}
+.country-card{
+  height:60vh;
+}
+.country-card .row{
+  padding:0;
+  justify-content:center;
+  align-items:center;
+  gap:4em;
+  margin-left:3vw
+}
+
+.country-card .row img{
+  width:40vw;
+  object-fit:cover;
+}
+.country-card-img-cont{
+  width:40vw;
+  padding:0;
+}
+
+.country-card .card-text{
+  line-height: 1.2em;}
